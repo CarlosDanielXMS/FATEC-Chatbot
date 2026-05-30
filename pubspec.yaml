@@ -10,10 +10,52 @@ dependencies:
   flutter:
     sdk: flutter
 
+  cupertino_icons: ^1.0.8
+  go_router: ^14.2.7
+  flutter_riverpod: ^2.5.1
+  shared_preferences: ^2.5.5
+
+  firebase_core: ^4.6.0
+  firebase_auth: ^6.3.0
+  cloud_firestore: ^6.2.0
+  google_sign_in: ^7.2.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  fake_cloud_firestore: any
+  firebase_auth_mocks: any
+
   flutter_lints: ^6.0.0
+  flutter_native_splash: ^2.4.7
+  flutter_launcher_icons: ^0.14.4
 
 flutter:
   uses-material-design: true
+  assets:
+      - assets/images/
+      - assets/icons/
+      - assets/logos/
+
+flutter_native_splash:
+  color: "#FAD8B5"
+  image: assets/icons/ic_launcher.png
+
+  android: true
+  ios: true
+  web: false
+  fullscreen: true
+
+  android_12:
+    color: "#FAD8B5"
+    image: assets/icons/ic_launcher.png
+    icon_background_color: "#FAD8B5"
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+
+  image_path: "assets/icons/ic_launcher.png"
+
+  adaptive_icon_background: "#FAD8B5"
+  adaptive_icon_foreground: "assets/icons/ic_launcher.png"
